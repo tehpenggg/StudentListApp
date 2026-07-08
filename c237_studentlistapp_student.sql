@@ -31,7 +31,7 @@ CREATE TABLE `student` (
   `contact` varchar(10) NOT NULL,
   `image` varchar(1000) NOT NULL,
   PRIMARY KEY (`studentid`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (1,'John Edward ','2007-05-08','98765432','https://unsplash.com/photos/man-wearing-henley-top-portrait-7YVZYZeITc8'),(2,'Mary Thomson','2006-02-06','98765678','https://www.magnific.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_17096951.htm#fromView=keyword&page=1&position=0&uuid=9251618b-1989-43de-b736-5fa8bf00b0e0&query=People'),(3,'Benny Teo','2006-08-18','98769879','https://unsplash.com/photos/a-man-with-a-beard-and-a-black-shirt-qmgFOZTC95Q');
+INSERT INTO `student` VALUES (1,'John Edward ','2007-05-08','98765432','https://randomuser.me/api/portraits/men/1.jpg'),(2,'Mary Thomson','2006-02-06','98765678','https://randomuser.me/api/portraits/women/1.jpg'),(3,'Benny Teo','2006-08-18','98769879','https://randomuser.me/api/portraits/men/45.jpg'),(4,'Jane Doe','2006-10-18','98700123','https://randomuser.me/api/portraits/women/68.jpg'),(5,'Sammy Teo','2007-10-26','87710102','https://randomuser.me/api/portraits/women/89.jpg');
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-02 12:09:40
+-- Dump completed on 2026-07-08 12:13:42
