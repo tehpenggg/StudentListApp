@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `c237_studentlistapp` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `c237_studentlistapp`;
 -- MySQL dump 10.13  Distrib 8.0.43, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: c237_studentlistapp
@@ -40,7 +38,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (1,'John Edward ','2007-05-08','98765432','https://randomuser.me/api/portraits/men/1.jpg'),(2,'Mary Thomson','2006-02-06','98765678','https://randomuser.me/api/portraits/women/1.jpg'),(3,'Benny Teo','2006-08-18','98769879','https://randomuser.me/api/portraits/men/45.jpg'),(4,'Jane Doe','2006-10-18','98700123','https://randomuser.me/api/portraits/women/68.jpg'),(5,'Sammy Teo','2007-10-26','87710102','https://randomuser.me/api/portraits/women/89.jpg');
+INSERT INTO `student` VALUES (1,'John Edward ','2007-05-08','98765432','1.jpg'),(2,'Mary Thomson','2006-02-06','98765678','2.jpg'),(3,'Benny Teo','2006-08-18','98769879','45.jpg'),(4,'Jane Doe','2006-10-18','98700123','68.jpg'),(5,'Sammy Teo','2007-10-26','87710102','89.jpg');
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-08 12:13:42
+-- Dump completed on 2026-07-11 23:21:16
