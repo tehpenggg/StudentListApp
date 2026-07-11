@@ -35,6 +35,8 @@
             <th width="100">Student Image</th>
             <th width="50">Dob</th>
             <th width="50">Contact</th>
+            <th width="50">Edit</th>
+            <th width="50">Delete</th>
           </tr>
       </thead>
       <tbody>
@@ -42,8 +44,15 @@
           <tr>
             <td><a href='/student/<%= students[i].studentid %>'><%= students[i].name %></a></td>
             <td><img src="<%= students[i].image %>" width="100"></td>
-            <td><%= new Date(students[i].dob).toDateString().substring(4) %></td>
+            <td><%= new Date(students[i].dob).toLocaleDateString('en-GB') %></td>
             <td><%= students[i].contact %></td>
+            
+            <!-- Edit Link -->
+            <td><a href="/editStudent/<%= students[i].studentid %>">Edit</a></td>
+            
+            <!-- Delete Link -->
+            <td><a href="/deleteStudent/<%= students[i].studentid %>"
+                onclick="return confirm('Are you sure you want to delete this student?')">Delete</a></td>
           </tr>
         <% } %>
       </tbody>
